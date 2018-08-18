@@ -1,0 +1,4 @@
+*.pyc
+ros/build
+ros/devel
+
