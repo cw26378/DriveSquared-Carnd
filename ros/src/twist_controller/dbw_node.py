@@ -76,7 +76,7 @@ class DBWNode(object):
                                             self.current_velocity,
                                             self.dbw_enabled,
                                             self.linear_vel,
-                                            self.angular_vel,
+                                            self.angular_vel
                                                             )
             if self.dbw_enabled:
                 self.publish(throttle, brake, steer)
