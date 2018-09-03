@@ -1,3 +1,15 @@
+### Team members
+
+| Name    | Email address |
+|---------|:-------------:|
+| Dr.Cheng Wang (Team Leader) | wangcheng.pku@gmail.com |
+| Renyuan Zhang | yuanisbug@gmail.com |
+| Dhatri Chennavajula | chdhatri.b@gmail.com |
+| Siddharth Singi |siddharth.singi@gmail.com |
+| Fadi Sedik | fady88@gmail.com |
+
+
+
 This is the project repo for the final project of the Udacity Self-Driving Car Nanodegree: Programming a Real Self-Driving Car. For more information about the project, see the project introduction [here](https://classroom.udacity.com/nanodegrees/nd013/parts/6047fe34-d93c-4f50-8336-b70ef10cb4b2/modules/e1a23b06-329a-4684-a717-ad476f0d8dff/lessons/462c933d-9f24-42d3-8bdc-a08a5fc866e4/concepts/5ab4b122-83e6-436d-850f-9f4d26627fd9).
 
 Please use **one** of the two installation options, either native **or** docker installation.
@@ -55,6 +67,8 @@ source devel/setup.sh
 roslaunch launch/styx.launch
 ```
 4. Run the simulator
+The traffic light detector model can detect red light in the simulator correctly: 
+![image alt text](imgs/img_sim.jpg)
 
 ### Real world testing
 1. Download [training bag](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/traffic_light_bag_file.zip) that was recorded on the Udacity self-driving car.
@@ -72,3 +86,17 @@ cd CarND-Capstone/ros
 roslaunch launch/site.launch
 ```
 5. Confirm that traffic light detection works on real life images
+![image alt text](imgs/img_real.jpg)
+
+### Notes for debugging
+
+1. If an error regarding mkz_dbw occurs, run the following download:
+
+```bash <(wget -q -O - https://bitbucket.org/DataspeedInc/dbw_mkz_ros/raw/default/dbw_mkz/scripts/sdk_install.bash)
+```
+
+2. If `python import error` shows up, try:
+```pip install --upgrade catkin_pkg_modules
+```
+
+3. Remember to change the permission of `.py` files using ```chmod +x [path to file]```
