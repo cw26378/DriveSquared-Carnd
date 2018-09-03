@@ -92,11 +92,16 @@ roslaunch launch/site.launch
 
 1. If an error regarding mkz_dbw occurs, run the following download:
 
-```bash <(wget -q -O - https://bitbucket.org/DataspeedInc/dbw_mkz_ros/raw/default/dbw_mkz/scripts/sdk_install.bash)
+```bash 
+bash <(wget -q -O - https://bitbucket.org/DataspeedInc/dbw_mkz_ros/raw/default/dbw_mkz/scripts/sdk_install.bash)
 ```
 
 2. If `python import error` shows up, try:
-```pip install --upgrade catkin_pkg_modules
+```bash
+pip install --upgrade catkin_pkg_modules
 ```
 
-3. Remember to change the permission of `.py` files using ```chmod +x [path to file]```
+3. Remember to change the permission of `.py` files using 
+```bash
+chmod +x [path to file]
+```
